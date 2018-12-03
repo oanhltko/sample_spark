@@ -19,7 +19,7 @@ spShortDescription := "My sample Spark Package" // Your one line description of 
 spDescription := "My sample package to publish to Spark Package Repository"
 
 //credentials += Credentials(Path.userHome / ".ivy2" / ".sbtcredentials4")
-credentials += Credentials("Spark Packages Realm", "spark-packages.org", "oanhltko", "006a1780fae945dd1f2cf7c1a39f17ac3a562f1e")
+credentials += Credentials("Spark Packages Realm", "spark-packages.org", "oanhltko", "24c80b043e2f8d81c8f14613a944dc851776e7ce")
 
 sparkComponents += "core"
 
