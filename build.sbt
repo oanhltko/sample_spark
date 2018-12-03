@@ -5,9 +5,9 @@ scalaVersion := "2.11.8"
 
 sparkVersion := "2.1.0"
 
-version := "0.13.5"
+version := "0.1.0-SNAPSHOT"
 
-spAppendScalaVersion := true
+spAppendScalaVersion := false
 
 // change the value below to change the directory where your zip artifact will be created
 spDistDirectory := target.value
@@ -19,7 +19,7 @@ spShortDescription := "My sample Spark Package" // Your one line description of 
 spDescription := "My sample package to publish to Spark Package Repository"
 
 //credentials += Credentials(Path.userHome / ".ivy2" / ".sbtcredentials4")
-credentials += Credentials("Sample of Spark package", "spark-packages.org", "oanhltko", "b6492f94a7f723c9dd19d9a9f8ebea3408161bfb")
+credentials += Credentials("Sample of Spark package", "spark-packages.org", s"oanhltko", s"006a1780fae945dd1f2cf7c1a39f17ac3a562f1e")
 
 sparkComponents += "core"
 
@@ -34,7 +34,6 @@ pomExtra :=
   <scm>
     <url>git@github.com:oanhltko/sample_spark.git</url>
     <connection>scm:git:git@github.com:oanhltko/sample_spark.git</connection>
-//    <connection>scm:git:https://github.com/oanhltko/sample_spark.git</connection>
   </scm>
   <developers>
     <developer>
