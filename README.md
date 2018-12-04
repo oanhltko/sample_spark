@@ -22,23 +22,15 @@ At first, we will prepare resource following directory structure. Please note th
 So, the directory structure will be placed as below:
 - Directory structure
 
-|-- build.sbt
-
-|-- lib
-
-|-- project
-
-|-- src
-
-|...|-- main
-
-|...|...|---- java
-
-|...|...|---- resources
-
-|...|...|---- scala
-
-|-- target
+    |-- build.sbt
+    |-- lib
+    |-- project
+    |-- src
+    |...|-- main
+    |...|...|---- java
+    |...|...|---- resources
+    |...|...|---- scala
+    |-- target
 
 ## Preparations
 
