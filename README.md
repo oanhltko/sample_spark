@@ -67,33 +67,45 @@ The GitHub repository name, the release version, ... are declared in build.sbt (
 
 There are some required information that you must add to build.sbt:
 - Name of your Spark Package:
+
 `spName := "organization/my-awesome-spark-package"`
+
 My sample: 
+
 `spName := "oanhltko/sample_spark"`
 
 - Spark Version your package depends on
+
 `sparkVersion := "x.x.x"`
+
 My sample: 
+
 `sparkVersion := "2.1.0"`
 
 - Define release version
+
 `version := "x.x.x"`
 
 Note: The release version cannot contain -SNAPSHOT. SNAPSHOT version is not allowed to publish to Spark Package repository.
+
 - Define location which contains zip/jar/pom file which are created:
+
 `spDistDirectory := target.value`
 
 If you define `target.value`, the zip file will be placed in <your_project>/target/ folder.
 
 - Declare the license that is used in your project. Example:
+
 `licenses += "Apache-2.0" -> url("http://opensource.org/licenses/Apache-2.0")`
 
 To register/publish package, you have add short description, description, homepage and credential informations.
 
 - Add short description: 
+
 `spShortDescription := "<Your one line description of your package>"`
 
 - Add description:
+
 ```scala
     spDescription := """<My long description.
                     |Could be multiple lines long.
@@ -102,6 +114,7 @@ To register/publish package, you have add short description, description, homepa
 ```
 
 - Add credential: 
+
 `credentials += Credentials(Path.userHome / ".ivy2" / ".sbtcredentials")`
 
 Open <user_home>/.ivy2/.sbtcredentials file, then add code in below to define the credential information:
@@ -151,6 +164,7 @@ pomExtra :=
 The Release Artifact is a zip file that includes a `jar` file and a `pom` file. The name of the artifact must be in the format `$GITHUB_REPO_NAME-$VERSION.zip`. Similarly, the name of the jar and the pom must be `$GITHUB_REPO_NAME-$VERSION.jar` and `$GITHUB_REPO_NAME-$VERSION.pom` respectively. 
 
 Example:
+
 - My GitHub package repository is https://github.com/oanhltko/sample_spark, release version is 1.0.0, my artifact is: `sample_spark-1.0.0.zip`. This zip file contains `sample_spark-1.0.1.jar` and `sample_spark-1.0.1.pom` files.
 
 ### 1. Generate jar file
