@@ -14,7 +14,7 @@ spDistDirectory := target.value
 
 licenses += "Apache-2.0" -> url("http://opensource.org/licenses/Apache-2.0")
 
-spShortDescription := "My sample Spark Package" // Your one line description of your package
+spShortDescription := "My sample Spark Package version 1.0.1" // Your one line description of your package
 
 spDescription := "My sample package to publish to Spark Package Repository"
 
