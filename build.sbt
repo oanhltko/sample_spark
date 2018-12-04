@@ -5,7 +5,7 @@ scalaVersion := "2.11.8"
 
 sparkVersion := "2.1.0"
 
-version := "0.1.0-SNAPSHOT"
+version := "0.0.1"
 
 spAppendScalaVersion := false
 
