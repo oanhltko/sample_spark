@@ -23,13 +23,21 @@ So, the directory structure will be placed as below:
 - Directory structure
 
     |-- build.sbt
+    
     |-- lib
+    
     |-- project
+    
     |-- src
+    
     |...|-- main
+    
     |...|...|---- java
+    
     |...|...|---- resources
+    
     |...|...|---- scala
+    
     |-- target
 
 ## Preparations
